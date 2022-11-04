@@ -21,12 +21,31 @@
     <title lang="en">DZ-7</title>
   </head>
   <body>
-    <!-- <header class="page__header">
+    <header class="page__header">
       <div class="container flex__container">
         <nav class="nav">
           <a class="logo nav__logo" href="./index.html" lang="en"
             ><span class="logo__style">Web</span>Studio
           </a>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
           <ul class="nav__list">
             <li class="nav__item header__item">
               <a class="nav__link nav__link-current" href="./index.html"
@@ -59,7 +78,31 @@
           </li>
         </ul>
       </div>
-    </header> -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu">
+          <li><a href="" class="link">About</a></li>
+          <li><a href="" class="link">Products</a></li>
+          <li><a href="" class="link">Contacts</a></li>
+          <li><a href="" class="link">Career</a></li>
+        </ul>
+      </div>
+    </header>
 
     <main>
       <section class="section page">
@@ -229,12 +272,37 @@
               </ul>
             </li>
             <li class="card__item card__item-backdown">
-              <img
-                src="./imeges/img-1.jpg"
-                width="270"
-                height="260"
-                alt="Ольга Рєпіна"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./imeges/team/img-2-destop.jpg    1x,
+                    ./imeges/team/img-2-destop-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./imeges/team/img-2-tab-1x.jpg 1x,
+                    ./imeges/team/img-2-tab-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./imeges/team/img-2-mob-1x.jpg 1x,
+                    ./imeges/team/img-2-mob-2x.jpg 2x
+                  "
+                />
+
+                <img
+                  src="./imeges/team/img-2-destop.jpg"
+                  width="450"
+                  height="460"
+                  alt="Ольга Рєпіна"
+                />
+              </picture>
+
               <div class="card__content">
                 <h3 class="card__title">Ольга Рєпіна</h3>
                 <p class="card__text" lang="en">Frontend Developer</p>
@@ -271,12 +339,36 @@
               </ul>
             </li>
             <li class="card__item card__item-backdown">
-              <img
-                src="./imeges/img-2.jpg"
-                width="270"
-                height="260"
-                alt="Микола Тарасов"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./imeges/team/img-3-destop.jpg    1x,
+                    ./imeges/team/img-3-destop-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./imeges/team/img-3-tab-1x.jpg 1x,
+                    ./imeges/team/img-3-tab-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./imeges/team/img-3-mob-1x.jpg 1x,
+                    ./imeges/team/img-3-mob-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./imeges/team/img-3-destop.jpg"
+                  width="450"
+                  height="460"
+                  alt="Микола Тарасов"
+                />
+              </picture>
+
               <div class="card__content">
                 <h3 class="card__title">Микола Тарасов</h3>
                 <p class="card__text" lang="en">Marketing</p>
@@ -313,12 +405,36 @@
               </ul>
             </li>
             <li class="card__item card__item-backdown">
-              <img
-                src="./imeges/img-3.jpg"
-                width="270"
-                height="260"
-                alt="Михайло Єрмаков"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./imeges/team/img-4-destop.jpg    1x,
+                    ./imeges/team/img-4-destop-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./imeges/team/img-4-tab-1x.jpg 1x,
+                    ./imeges/team/img-4-tab-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./imeges/team/img-4-mob-1x.jpg 1x,
+                    ./imeges/team/img-4-mob-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./imeges/team/img-4-destop.jpg"
+                  width="450"
+                  height="460"
+                  alt="Михайло Єрмаков"
+                />
+              </picture>
+
               <div class="card__content">
                 <h3 class="card__title">Михайло Єрмаков</h3>
                 <p class="card__text" lang="en">UI Designer</p>
@@ -583,5 +699,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
