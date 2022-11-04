@@ -62,7 +62,7 @@
     </header> -->
 
     <main>
-       <section class="section page">
+      <section class="section page">
         <div class="container">
           <h1 class="page__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="page__button button" type="button" data-modal-open>
@@ -123,8 +123,8 @@
             </li>
           </ul>
         </div>
-      </section> 
-     <section class="section make">
+      </section>
+      <section class="section make">
         <div class="container">
           <h2 class="make__title">Чим ми займаємося</h2>
           <ul class="make__items">
@@ -163,12 +163,36 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="cards">
             <li class="card__item card__item-backdown">
-              <img
-                src="./imeges/img.jpg"
-                width="270"
-                height="260"
-                alt="Ігор Дем'яненко"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./imeges/team/img-1-destop.jpg    1x,
+                    ./imeges/team/img-1-destop-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./imeges/team/img-1-tab-1x.jpg 1x,
+                    ./imeges/team/img-1-tab-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./imeges/team/img-1-mob-1x.jpg 1x,
+                    ./imeges/team/img-1-mob-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./imeges/team/img-1-destop.jpg"
+                  width="450"
+                  height="460"
+                  alt="Ігор Дем'яненко"
+                />
+              </picture>
+
               <div class="card__content">
                 <h3 class="card__title">Ігор Дем'яненко</h3>
                 <p class="card__text" lang="en">Product Designer</p>

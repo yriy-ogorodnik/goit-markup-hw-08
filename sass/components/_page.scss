@@ -1,30 +1,58 @@
 .page {
   max-width: 1600px;
-  min-height: 600px;
+  min-height: 400px;
   margin: 0 auto;
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url("../imeges/header-img.jpg");
+    url("../imeges/Header-bg-mobile.jpg");
   background-repeat: no-repeat;
   background-color: rgba(47, 48, 58, 0.4);
   background-position: center;
   background-size: cover;
 
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  @include retina {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../imeges/Header-bg-mobile-2x.jpg");
+  }
+  @include tablet {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../imeges/Header-bg-tablet.jpg");
+    @include retina {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../imeges/Header-bg-tablet-2x.jpg");
+    }
+  }
+  @include desktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    min-height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../imeges/Header-bg-destop.jpg");
+    @include retina {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../imeges/Header-bg-destop-2x.jpg");
+    }
+  }
 }
 .page__title {
-  max-width: 696px;
+  max-width: 360px;
   margin: 0 auto;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-white);
 
   margin-bottom: 30px;
+
+  @include desktop {
+    font-size: 44px;
+    max-width: 696px;
+  }
 }
 .button {
   border-radius: 4px;
