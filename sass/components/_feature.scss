@@ -1,0 +1,47 @@
+.feature {
+  padding-bottom: 0;
+}
+
+.feature__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.feature__item-format {
+  width: 100%;
+  @include tablet {
+    @include calc(2);
+  }
+  @include desktop {
+    @include calc(4);
+  }
+  // width: 270px;
+}
+
+.feature__icon {
+  display: flex;
+  justify-content: center;
+  background-color: #f5f4fa;
+
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  height: 120px;
+}
+
+.feature__title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  @include desktop {
+    text-align: left;
+  }
+}
+.feature__text {
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+}

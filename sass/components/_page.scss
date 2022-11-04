@@ -1,0 +1,56 @@
+.page {
+  max-width: 1600px;
+  min-height: 600px;
+  margin: 0 auto;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../imeges/header-img.jpg");
+  background-repeat: no-repeat;
+  background-color: rgba(47, 48, 58, 0.4);
+  background-position: center;
+  background-size: cover;
+
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.page__title {
+  max-width: 696px;
+  margin: 0 auto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-white);
+
+  margin-bottom: 30px;
+}
+.button {
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
+  display: inline-block;
+  text-align: center;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+  border: transparent;
+
+  color: var(--color-white);
+  background-color: var(--accent-color);
+
+  transition-property: color, background-color;
+  transition-duration: 250ms, 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:hover,
+.button:focus {
+  color: var(--accent-color);
+  background-color: var(--color-white);
+}
