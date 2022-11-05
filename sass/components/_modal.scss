@@ -19,7 +19,7 @@
   border-radius: 4px;
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform 300ms linear;
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     max-width: 450px;
   }
   @include tablet {
