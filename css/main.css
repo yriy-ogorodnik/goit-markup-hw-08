@@ -1195,7 +1195,7 @@ ul li {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
+  width: 450px;
   min-height: 581px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1207,6 +1207,18 @@ ul li {
   transition: -webkit-transform 300ms linear;
   transition: transform 300ms linear;
   transition: transform 300ms linear, -webkit-transform 300ms linear;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    min-height: 581px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 /* початковий */
@@ -1348,20 +1360,27 @@ textarea:hover {
 
 .modal-form__checkbox-label {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  font-size: 12px;
   cursor: pointer;
-  font-size: 14px;
+  padding-left: 20px;
   line-height: 1.71;
   color: var(--secondary-text-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__checkbox-label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
+    padding-left: 0px;
+  }
 }
 
 .modal-form__checkbox-input {
@@ -1386,8 +1405,8 @@ textarea:hover {
 
 .modal-form__checkbox-icon {
   position: absolute;
-  top: 4px;
-  left: 7px;
+  top: 0px;
+  left: 0px;
   /* margin-top: 0em; */
   /* margin-left: 29em; */
   width: 1.14em;
@@ -1399,6 +1418,12 @@ textarea:hover {
   background-position: 50% 50%;
   -webkit-box-shadow: 0 0 0 0.1em #212121;
           box-shadow: 0 0 0 0.1em #212121;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__checkbox-icon {
+    top: 4px;
+    left: 7px;
+  }
 }
 .modal-form__checkbox-input:checked ~ .modal-form__checkbox-icon {
   background-color: var(--accent-color);
