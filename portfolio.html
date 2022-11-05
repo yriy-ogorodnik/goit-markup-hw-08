@@ -24,6 +24,25 @@
           <a class="logo nav__logo" href="./index.html" lang="en"
             ><span class="logo__style">Web</span>Studio
           </a>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
           <ul class="nav__list">
             <li class="nav__item header__item">
               <a class="nav__link" href="./index.html">Студія</a>
@@ -55,6 +74,64 @@
             >
           </li>
         </ul>
+      </div>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="mobile-menu-wrap">
+          <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="mobile-menu__link">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu__link mobile-menu__link-curent"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu__link">Контакти</a>
+            </li>
+          </ul>
+          <div>
+            <ul class="mobile-contacts">
+              <li class="mobile-contacts__item">
+                <a
+                  class="mobile-contacts__phone-number"
+                  href="tel:+380961111111"
+                >
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-contacts__item">
+                <a
+                  class="mobile-contacts__mail"
+                  href="malito:info@devstudio.com"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mobile-soc">
+              <li><a href="" class="mobile-soc__link">Instagram</a></li>
+              <li><a href="" class="mobile-soc__link">Twitter</a></li>
+              <li><a href="" class="mobile-soc__link">Facebook</a></li>
+              <li><a href="" class="mobile-soc__link">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -364,5 +441,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
