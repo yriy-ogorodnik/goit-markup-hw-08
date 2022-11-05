@@ -1,5 +1,9 @@
 .make{
   display: none;
+  @include desktop{
+    display: block;
+  }
+ 
 }
 .make__title {
   margin-bottom: 50px;
