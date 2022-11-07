@@ -58,13 +58,19 @@
 //    margin-left: 30px;
 //    margin-top: 30px;
 //  }
-
+.portfolio-item-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 .card-content {
+  flex-grow: 1;
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
+
 .portfolio-title {
   margin-bottom: 4px;
   font-weight: 700;
@@ -98,16 +104,20 @@
 }
 .overlay--text {
   position: absolute;
+  // display: block;
   top: 0;
   left: 0;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: #fff;
+  overflow-y: scroll;
 
   padding: 63px 24px;
   transform: translateY(100%);
   transition: transform 250ms linear;
+
+  height: 100%;
 }
 
 .portfolio-item {
