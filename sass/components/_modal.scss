@@ -191,10 +191,12 @@ textarea:hover {
 }
 
 .modal-form__link {
+// display: inline-block;
   padding-left: 5px;
   color: var(--accent-color);
+  
+  // outline: none;
   text-decoration: underline;
-  outline: none;
 }
 
 .modal-form__checkbox-icon {

@@ -70,11 +70,6 @@ a {
   color: inherit;
 }
 
-a:link,
-a:visited {
-  text-decoration: none;
-}
-
 a:hover {
   text-decoration: none;
 }
@@ -1459,7 +1454,6 @@ textarea:hover {
   padding-left: 5px;
   color: var(--accent-color);
   text-decoration: underline;
-  outline: none;
 }
 
 .modal-form__checkbox-icon {

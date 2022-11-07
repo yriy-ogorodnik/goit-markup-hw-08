@@ -1,63 +1,62 @@
-
 body {
 	font-family: var(--main-font);
 	font-size: 14px;
 	color: var(--primary-text-color);
 	background-color: var(--color-white);
 	letter-spacing: 0.03em;
- }
- h1,
- h2,
- h3,
- h4,
- h5,
- h6,
- p {
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
 	margin: 0;
- }
- 
- ul,
- ol {
+}
+
+ul,
+ol {
 	margin: 0;
 	padding-left: 0;
 	list-style: none;
- }
- 
- img {
+}
+
+img {
 	display: block;
 	max-width: 100%;
 	height: auto;
 
 	width: 100%;
- }
- 
- button {
+}
+
+button {
 	cursor: pointer;
- }
- a {
+}
+a {
 	text-decoration: none;
 	color: inherit;
- }
- a:link,
+}
+a:link,
 a:visited {
-	text-decoration: none;
+	// text-decoration: none;
 }
 a:hover {
 	text-decoration: none;
 }
- address {
+address {
 	font-style: normal;
- }
- ul li {
+}
+ul li {
 	list-style: none;
 }
 
- .section {
+.section {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	
+
 	@include desktop {
 		padding-top: 94px;
 		padding-bottom: 94px;
 	}
- }
+}
